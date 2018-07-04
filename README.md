@@ -1,19 +1,8 @@
-**The Interplanetary File System — a New Internet Protocol, Designed to Upgrade the Web and Maybe Even Replace HTTP**
 
-The Hypertext Transfer Protocol (HTTP) has unified the entire world into a single global information protocol, standardizing how we distribute and present information to each other. 
+# Rocket.chat InterPlanetary File System (IPFS) storage provider 
 
-HTTP has achieved many things, it's usefulness as a foundation for the distribution and persistence of the sum of human knowledge. The way HTTP distributes content is fundamentally flawed, and no amount of performance tune-ups or forcing broken CA SSL or whatever is going to fix that. 
-
-Apart from this, today's internet has lots of downsides. 
-- Increase bandwidth cost as user downloads a file from a single computer at a time. 
-- It relays on centralized servers. 
-- HTTP is great for loading websites but **not designed to transfer a large amount of data**.
-
-
-# Storing Files on InterPlanetary File System 
-
-Rocket.Chat enables integration with InterPlanetary File System (IPFS) as data storage.
-InterPlanetary File System (IPFS) is a protocol and network designed to create a content-addressable, peer-to-peer method of storing and sharing hypermedia in a distributed file system. IPFS was initially designed by Juan Benet and is now an open-source project developed with help from the community.
+Rocket.Chat enables integration with IPFS as data storage.
+IPFS is a protocol and network designed to create a content-addressable, peer-to-peer method of storing and sharing hypermedia in a distributed file system. IPFS was initially designed by Juan Benet and is now an open-source project developed with help from the community.
 
 It helps in storing the file on the decentralized data storage network. 
 Files stored on the IPFS network can be accessed on any device using your login details.
@@ -65,9 +54,54 @@ Enabling IPFS in rocket.chat requires an interaction with the IPFS network, for 
 
 Communication with IPFS network can be done by using package [IPFS mini](https://www.npmjs.com/package/ipfs-mini)
 
+Create a new object of IPFS, that will communicate with the infura gateways. 
+
+ ``` const ipfs = new IPFS({ host: 'ipfs.infura.io', port: 5001, protocol: 'https' }); ```
+
+The Gateway will be used to communicate with the IPFS network, adding and retrieving the files from the IPFS. 
+
+ ```ipfs.add(file,(err,result) => {}); ```
+
+Add(): 
+Function will use to add file on the IPFS network. 
+*variables:*
+- file: Contain the file, it can be in formate of blob, buffer array. 
+- err: Error if occur file adding some file on the IPFS network. 
+- result: Hash/key that can be used to identify the file stored on the IPFS network. 
+
+``` ipfs.cat(Hash,(err,rst) => {}); ``` 
+
+Cat():
+function will be used to retrieve the content stored on the IPFS network. 
+*variables:*
+- Hash: Hash/Key of file that needs to be retrieved. 
+- err: Error if occur file adding some file on the IPFS network. 
+- result: Stored information on the IPFS.
+
+
 
 # Work in progress 
 
 - Managing a user directory on the IPFS network, that can add files and manage them. 
-- Enabling the secure private key/public key encryption so that files can be shared for specific duration. 
+- Enabling the secure private key/public key encryption so that files can be shared for the specific duration. 
 - Managing the version history
+
+## References 
+
+### What is IPFS 
+The Interplanetary File System — a New Internet Protocol, Designed to Upgrade the Web and Maybe Even Replace HTTP
+
+The Hypertext Transfer Protocol (HTTP) has unified the entire world into a single global information protocol, standardizing how we distribute and present information to each other. 
+
+HTTP has achieved many things, it's usefulness as a foundation for the distribution and persistence of the sum of human knowledge. The way HTTP distributes content is fundamentally flawed, and no amount of performance tune-ups or forcing broken CA SSL or whatever is going to fix that. 
+
+Apart from this, today's internet has lots of downsides. 
+- Increase bandwidth cost as user downloads a file from a single computer at a time. 
+- It relays on centralized servers. 
+- HTTP is great for loading websites but **not designed to transfer a large amount of data**.
+
+
+Welcome to EditPad.org - your online plain text editor. Enter or paste your text here. To download and save it, click on the button below.
+9
+ 
+ more » Edit Pad - Free Online Text EditorEdit Pad © 2018
