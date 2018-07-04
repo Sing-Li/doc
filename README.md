@@ -1,8 +1,8 @@
 **The Interplanetary File System — a New Internet Protocol, Designed to Upgrade the Web and Maybe Even Replace HTTP**
 
-The Hypertext Transfer Protocol (HTTP) has unified the entire world into a single global information protocol, standardizing how we distribute and present information to eachother. 
+The Hypertext Transfer Protocol (HTTP) has unified the entire world into a single global information protocol, standardizing how we distribute and present information to each other. 
 
-HTTP has achieved many things, it's usefulness as a foundation for the distribution and persistence of the sum of human knowledge. The way HTTP distributes content is fundamentally flawed, and no amount of performance tuneups or forcing broken CA SSL or whatever is going to fix that. 
+HTTP has achieved many things, it's usefulness as a foundation for the distribution and persistence of the sum of human knowledge. The way HTTP distributes content is fundamentally flawed, and no amount of performance tune-ups or forcing broken CA SSL or whatever is going to fix that. 
 
 Apart from this, today's internet has lots of downsides. 
 - Increase bandwidth cost as user downloads a file from a single computer at a time. 
