@@ -99,9 +99,3 @@ Apart from this, today's internet has lots of downsides.
 - Increase bandwidth cost as user downloads a file from a single computer at a time. 
 - It relays on centralized servers. 
 - HTTP is great for loading websites but **not designed to transfer a large amount of data**.
-
-
-Welcome to EditPad.org - your online plain text editor. Enter or paste your text here. To download and save it, click on the button below.
-9
- 
- more » Edit Pad - Free Online Text EditorEdit Pad © 2018
