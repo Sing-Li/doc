@@ -1,16 +1,16 @@
 
-# Rocket.chat InterPlanetary File System (IPFS) storage provider 
+# Add IPFS storage provider support for Rocket.Chat
 
-Rocket.Chat enables integration with IPFS as data storage.
-IPFS is a protocol and network designed to create a content-addressable, peer-to-peer method of storing and sharing hypermedia in a distributed file system. IPFS was initially designed by Juan Benet and is now an open-source project developed with help from the community.
+This add integration with IPFS (InterPlanetary File System) as data storage provider.
 
-It helps in storing the file on the decentralized data storage network. 
-Files stored on the IPFS network can be accessed on any device using your login details.
+IPFS is totally decentralized.  It is a protocol and network designed to create a content-addressable, peer-to-peer method of storing and sharing hypermedia in a distributed file system. IPFS was initially designed by Juan Benet and is now an open-source project developed with help from a large community.
+
+IPFS stores uploaded file on the decentralized data storage network.  Files stored on the IPFS network can be accessed on any client/device using just your login details.
 
 # About
 
 ## Storing Files
-- Like any other storage provider, whenever a new file uploaded on the Rocket.chat, the stored file get encrypted by using the provided password. It uses AES encryption to encrypt the data. 
+- Like  other storage provider, whenever a new file uploaded on the Rocket.chat, the storage provider receives the file.  It then stored file  encrypted by using a password. This password is specified as a setup option within Rocket.Chat. The encryption used is  AES. 
 - The encrypted file is stored on the IPFS network. IPFS use **Distributed Hash Tables**, it stores the information as key/value pairs. 
 - Using the DHT, data is spread across a network of computers, and efficiently coordinated to enable efficient access and lookup between nodes. It also provides fault tolerance and scalability.
 - IPFS network provides a key (HASH), that uniquely identifies the stored file on the IPFS network. 
