@@ -31,7 +31,7 @@ After registration.
 
 Once you are registered, It requires login details to [Log in](https://github.com/RocketChat/docs/tree/master/user-guides/login) in Rocket.chat.
 
-## Adding files on InterPlanetary File System 
+## Adding files on IPFS
 
 Whenever we upload a file on the rocket.chat server we can add the file to the IPFS network. 
 Uploaded file stores on the IPFS, network and can uniquely identify by using the **IPFS Hash**
